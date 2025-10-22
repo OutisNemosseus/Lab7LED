@@ -1,0 +1,68 @@
+{
+  "creator": "Yosys 0.58+74 (git sha1 272aa9cde, x86_64-w64-mingw32-g++ 13.2.1 -O3)",
+  "modules": {
+    "expr1": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "boolean_exprs.v:7.1-12.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$abc$106$auto$blifparse.cc:397:parse_blif$107": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "boolean_exprs.v:8.17-8.18"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "boolean_exprs.v:8.20-8.21"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "boolean_exprs.v:9.17-9.18"
+          }
+        }
+      }
+    }
+  }
+}

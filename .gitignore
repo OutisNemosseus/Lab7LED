@@ -1,0 +1,26 @@
+﻿# Quartus build artifacts
+db/
+incremental_db/
+output_files/
+simulation/
+*.sof
+*.pof
+*.jic
+*.rpt
+*.srf
+
+# ModelSim / Questa
+work/
+transcript
+vsim.wlf
+*.wlf
+*.mpf
+*.mti
+modelsim.ini
+
+# Misc
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
