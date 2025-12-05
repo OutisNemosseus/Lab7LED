@@ -1,0 +1,4 @@
+# Quartus Project File for Lab 7 WS2812 Fade Controller
+# Date: December 5, 2025
+
+PROJECT_REVISION = "Lab7LED"

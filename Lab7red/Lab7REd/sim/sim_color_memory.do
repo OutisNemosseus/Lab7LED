@@ -5,8 +5,8 @@
 vlib work
 
 # Compile source files
-vlog -sv color_memory.sv
-vlog -sv tb_color_memory.sv
+vlog -sv ../design/color_memory.sv
+vlog -sv ../testbench/tb_color_memory.sv
 
 # Start simulation
 vsim -voptargs=+acc tb_color_memory

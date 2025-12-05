@@ -23,11 +23,11 @@ set_location_assignment PIN_AB7 -to PINAB7
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PINAB7
 
 # Source files
-set_global_assignment -name SYSTEMVERILOG_FILE de10_lite_wrapper.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ws2812_fade_top.sv
-set_global_assignment -name SYSTEMVERILOG_FILE fading_controller.sv
-set_global_assignment -name SYSTEMVERILOG_FILE color_memory.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ws2812_driver_rgb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../design/de10_lite_wrapper.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../design/ws2812_fade_top.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../design/fading_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../design/color_memory.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../design/ws2812_driver_rgb.sv
 
 # Compilation settings
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top

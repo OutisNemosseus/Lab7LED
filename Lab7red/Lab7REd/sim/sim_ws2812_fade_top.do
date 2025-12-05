@@ -6,11 +6,11 @@
 vlib work
 
 # Compile all source files
-vlog -sv color_memory.sv
-vlog -sv fading_controller.sv
-vlog -sv ws2812_driver_rgb.sv
-vlog -sv ws2812_fade_top.sv
-vlog -sv tb_ws2812_fade_top.sv
+vlog -sv ../design/color_memory.sv
+vlog -sv ../design/fading_controller.sv
+vlog -sv ../design/ws2812_driver_rgb.sv
+vlog -sv ../design/ws2812_fade_top.sv
+vlog -sv ../testbench/tb_ws2812_fade_top.sv
 
 # Start simulation
 vsim -voptargs=+acc tb_ws2812_fade_top

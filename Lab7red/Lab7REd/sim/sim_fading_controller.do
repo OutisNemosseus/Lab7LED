@@ -5,8 +5,8 @@
 vlib work
 
 # Compile source files
-vlog -sv fading_controller.sv
-vlog -sv tb_fading_controller.sv
+vlog -sv ../design/fading_controller.sv
+vlog -sv ../testbench/tb_fading_controller.sv
 
 # Start simulation
 vsim -voptargs=+acc tb_fading_controller
