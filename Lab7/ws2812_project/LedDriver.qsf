@@ -1,0 +1,62 @@
+#=============================================================================
+# Pin Assignment File for DE10-Lite
+# WS2812 LED Driver - Lab 6
+#
+# Target Device: MAX 10 (10M50DAF484C7G)
+#=============================================================================
+
+#-----------------------------------------------------------------------------
+# Clock (50MHz)
+#-----------------------------------------------------------------------------
+set_location_assignment PIN_P11 -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+
+#-----------------------------------------------------------------------------
+# Reset (Active-Low, KEY0 button)
+#-----------------------------------------------------------------------------
+set_location_assignment PIN_B8 -to reset_n
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to reset_n
+
+#-----------------------------------------------------------------------------
+# Switches for Color Input
+# Red: SW[5:3], Green: SW[8:6], Blue: SW[2:0]
+#-----------------------------------------------------------------------------
+
+# Blue[2:0] - SW[2:0]
+set_location_assignment PIN_C10 -to blue[0]
+set_location_assignment PIN_C11 -to blue[1]
+set_location_assignment PIN_D12 -to blue[2]
+
+# Red[2:0] - SW[5:3]
+set_location_assignment PIN_C12 -to red[0]
+set_location_assignment PIN_A12 -to red[1]
+set_location_assignment PIN_B12 -to red[2]
+
+# Green[2:0] - SW[8:6]
+set_location_assignment PIN_A13 -to green[0]
+set_location_assignment PIN_A14 -to green[1]
+set_location_assignment PIN_B14 -to green[2]
+
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to blue[*]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to red[*]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to green[*]
+
+#-----------------------------------------------------------------------------
+# WS2812 Data Output
+# Using Arduino Header GPIO_0 (Pin 0 = PIN_V10)
+# 
+# IMPORTANT: 
+#   - Power WS2812 VDD from 5V on Arduino header
+#   - WS2812 can accept 3.3V logic for DIN
+#   - NEVER connect WS2812 DOUT back to FPGA!
+#-----------------------------------------------------------------------------
+set_location_assignment PIN_V10 -to ws2812
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ws2812
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to ws2812
+
+#-----------------------------------------------------------------------------
+# Alternative Arduino Header Pins (if needed)
+# GPIO_1 = PIN_W10
+# GPIO_2 = PIN_V9
+# GPIO_3 = PIN_W9
+#-----------------------------------------------------------------------------
