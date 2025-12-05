@@ -58,7 +58,7 @@ The `.qsf` file already contains these pin assignments:
 | Signal | Pin | Location | I/O Standard |
 |--------|-----|----------|--------------|
 | PINP11 (Clock) | PIN_P11 | MAX10_CLK1_50 | 3.3-V LVTTL |
-| PINAB16 (Reset) | PIN_AB16 | KEY[0] | 3.3-V LVTTL |
+| PINB8 (Reset) | PIN_B8 | KEY[0] | 3.3 V SCHMITT TRIGGER |
 | PINAB7 (WS2812) | PIN_AB7 | Arduino_IO2 | 3.3-V LVTTL |
 
 **To verify pin assignments:**

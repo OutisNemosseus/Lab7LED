@@ -211,7 +211,7 @@ PASS: WS2812 driver is actively sending data
 | Signal | Pin Name | Pin Number | Description |
 |--------|----------|------------|-------------|
 | Clock | PINP11 | P11 | 50 MHz clock (MAX10_CLK1_50) |
-| Reset | PINAB16 | AB16 | KEY[0] button (active low) |
+| Reset | PINB8 | B8 | KEY[0] button (active low) |
 | WS2812 Data | PINAB7 | AB7 | Arduino_IO2 header pin |
 
 ### WS2812 LED Wiring

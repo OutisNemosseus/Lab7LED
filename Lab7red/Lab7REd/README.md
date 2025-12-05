@@ -119,7 +119,7 @@ Then:
 | Signal | Pin | Board Connection |
 |--------|-----|------------------|
 | Clock (PINP11) | PIN_P11 | MAX10_CLK1_50 (50 MHz) |
-| Reset (PINAB16) | PIN_AB16 | KEY[0] button |
+| Reset (PINB8) | PIN_B8 | KEY[0] button |
 | WS2812 Data (PINAB7) | PIN_AB7 | Arduino_IO2 header |
 
 ### WS2812 LED Wiring
