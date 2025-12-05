@@ -1,0 +1,37 @@
+# Quartus II generated files
+*.rpt
+*.summary
+*.smsg
+*.done
+*.pin
+*.sof
+*.pof
+*.jdi
+*.qws
+*.bak
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+*.qws
+
+# ModelSim generated files
+work/
+transcript
+*.wlf
+*.vstf
+*.vcd
+vsim.wlf
+*.bak
+
+# Temporary files
+*.log
+*.tmp
+*~
+~$*.docx
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

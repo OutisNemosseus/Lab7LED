@@ -1,0 +1,5 @@
+set_location_assignment PIN_P11 -to PINP11
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PINP11
+
+set_location_assignment PIN_AB7 -to PINAB7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PINAB7
